@@ -7,7 +7,7 @@ COLOR_USR=$'\e[38;5;243m'
 COLOR_DIR=$'\e[38;5;197m'
 COLOR_GIT=$'\e[38;5;39m'
 setopt PROMPT_SUBST
-export PROMPT='${COLOR_USR}%n ${COLOR_DIR}%~ ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} $ '
+export PROMPT='%{${COLOR_USR}%}%n %{${COLOR_DIR}%}%~ %{${COLOR_GIT}%}$(parse_git_branch)%{${COLOR_DEF}%} $ '
 
 alias cat="bat"
 alias ll="ls -lh"
